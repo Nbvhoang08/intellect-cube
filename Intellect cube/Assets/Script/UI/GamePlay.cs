@@ -28,7 +28,6 @@ public class GamePlay : UICanvas
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("Home");
         UIManager.Instance.CloseAll();
-        SoundManager.Instance.PlayVFXSound(2);
         UIManager.Instance.OpenUI<ChooseLV>();
     }
     private void Update()
@@ -68,7 +67,7 @@ public class GamePlay : UICanvas
     {
         SoundManager.Instance.TurnOn = !SoundManager.Instance.TurnOn;
         UpdateButtonImage();
-        SoundManager.Instance.PlayVFXSound(2);
+        SoundManager.Instance.PlayClickSound();
 
     }
 

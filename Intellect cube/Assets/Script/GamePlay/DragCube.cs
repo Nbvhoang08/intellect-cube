@@ -34,6 +34,7 @@ public class DragCube : MonoBehaviour
         // Lấy khoảng cách giữa chuột và object cha
         Vector3 mouseWorldPos = GetMouseWorldPosition();
         _offset = _parentObject.position - mouseWorldPos;
+        SoundManager.Instance.PlayVFXSound(0);
     }
 
     private void OnMouseDrag()
@@ -89,6 +90,7 @@ public class DragCube : MonoBehaviour
                 SpawnCubesByDirection(newPosition);
                 _isDragDone = true;
                 Subject.NotifyObservers("fill");
+                SoundManager.Instance.PlayVFXSound(1);
                 return;
             }
         }
@@ -130,7 +132,7 @@ public class DragCube : MonoBehaviour
 
                 // Thông báo observer
                 Subject.NotifyObservers("fill");
-
+                SoundManager.Instance.PlayVFXSound(1);
                 // Chờ 0.1s trước khi spawn cube tiếp theo
                 yield return new WaitForSeconds(0.1f);
             }

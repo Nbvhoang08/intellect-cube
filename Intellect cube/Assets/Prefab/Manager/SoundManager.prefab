@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d6a8d114b577a364a82017566ba28f7d, type: 3}
   - {fileID: 8300000, guid: 47350c14908775f478f269d30afadcb2, type: 3}
   - {fileID: 8300000, guid: 797250785ef968d4793b61026ae2cf1e, type: 3}
-  - {fileID: 8300000, guid: 797250785ef968d4793b61026ae2cf1e, type: 3}
+  - {fileID: 8300000, guid: dff816447dc862142b625db2d1c3f071, type: 3}
   musicVolume: 0.6
   sfxVolume: 1
   TurnOn: 1

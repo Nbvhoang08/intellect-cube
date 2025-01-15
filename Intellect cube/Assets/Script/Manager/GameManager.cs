@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour, IObserver
         // Mở giao diện chiến thắng
             StartCoroutine(WinAction());
             gameover = true;
+            LevelManager.Instance.SaveGame();
+             SoundManager.Instance.PlayVFXSound(3);
         }
     }
 
@@ -51,7 +53,8 @@ public class GameManager : MonoBehaviour, IObserver
     {
         // Hiển thị hiệu ứng ăn mừng
         yield return new WaitForSecondsRealtime(0.5f); // Không bị ảnh hưởng bởi Time.timeScale
-         SpawnCelebrationEffect();
+        SpawnCelebrationEffect();
+       
         yield return new WaitForSecondsRealtime(1); // Không bị ảnh hưởng bởi Time.timeScale
      
         UIManager.Instance.OpenUI<Pass>();

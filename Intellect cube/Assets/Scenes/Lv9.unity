@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1802609, g: 0.2256876, b: 0.30691004, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1025,7 +1024,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1034,7 +1033,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.6
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -1083,12 +1082,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 2, z: 10}
+  m_LocalRotation: {x: 0.4089817, y: -0.23466505, z: 0.10917689, w: 0.87506956}
+  m_LocalPosition: {x: 0, y: 2.982543, z: 0.0034751892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 963194228}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &757282343
 GameObject:
@@ -1427,8 +1426,8 @@ Transform:
   m_GameObject: {fileID: 851073382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6983, y: 4.3466, z: -2.1981}
-  m_LocalScale: {x: 4.0767426, y: 11.7678385, z: 3.29992}
+  m_LocalPosition: {x: 4.6121, y: 4.3466, z: -2.1981}
+  m_LocalScale: {x: 4.249189, y: 11.7678385, z: 3.29992}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1532,8 +1531,8 @@ Transform:
   m_GameObject: {fileID: 927938051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 3.63, y: -0.77, z: -2.2896}
-  m_LocalScale: {x: 1.310715, y: 4.4099684, z: 3.14}
+  m_LocalPosition: {x: 3.7047, y: -0.7194, z: -2.2896}
+  m_LocalScale: {x: 1.4119022, y: 4.2604704, z: 3.14}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1718,8 +1717,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 705507995}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.1, y: 0, z: 0}
 --- !u!114 &963194229
@@ -4221,6 +4219,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 963194228}
+  - {fileID: 705507995}
   - {fileID: 1086941844}
   - {fileID: 2073417532}
   - {fileID: 1744815869}

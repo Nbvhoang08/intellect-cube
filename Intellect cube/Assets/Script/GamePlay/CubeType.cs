@@ -8,5 +8,10 @@ public enum CubeType
     LeftDown,
     Up,
     Down,
-    DownLeftRight
+    DownLeftRight,
+    UpLeft,
+    UpRight,
+    DownLeftUp,
+    DownRightUp
+    
 }
